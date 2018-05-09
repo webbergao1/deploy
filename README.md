@@ -21,10 +21,10 @@ We used two docker images.
 # configuration folder
 >deployment
 >>node_config
->>*Puts node configuration files
+>> - Puts node configuration files
 >>
 >>monitor_api_config
->>*Puts monitor-api configuration files
+>> - Puts monitor-api configuration files
 
 # docker-compose.yml
 Start 2 nodes and 2 monitor-api services with docker images.
@@ -38,12 +38,12 @@ Start 2 nodes with docker image, no monitor-api services.
 
 # docker-compose-build-monitor.yml
 Start 2 nodes and 2 monitor-api serviecs with source code.<br> 
-Source code must be put in 'github.com/seeleteam/go-seele' and 'github.com/seeleteam/monitor-api'.<br> 
-And the deployment project must in 'github.com/seeleteam/deployment'.<br> 
+Source code must be put in `github.com/seeleteam/go-seele` and `github.com/seeleteam/monitor-api`.<br> 
+And the deployment project must in `github.com/seeleteam/deployment`.<br> 
 
 # docker-compose-build-node.yml
 Start 2 nodes with source code.
-Source code must be put in 'github.com/seeleteam/go-seele'.<br> 
-And the deployment project must in 'github.com/seeleteam/deployment'.<br> 
+Source code must be put in `github.com/seeleteam/go-seele`.<br> 
+And the deployment project must in `github.com/seeleteam/deployment`.<br> 
 
 # See the yml file for more details.
