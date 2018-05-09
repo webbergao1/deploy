@@ -1,0 +1,27 @@
+{
+  "Name": "seele node3",
+  "Version": "1.0",
+  "DataDir": "node3",
+  "ListenAddr": "0.0.0.0:39007",
+  "ServerPrivateKey": "0x42f51cd98def8a90bb411a3298cc3aa9149f0929211d2f23fde7e7512f8bd1d7",
+    "Coinbase": "0x4a880199d8a05511ce115a09e79eb63b8476c7904a6591d7ac8fe0422584eac31129faf9760bb1af721ab81a04ae28344a1c5231e6f5080833f612ae29a57107",
+  "StaticNodes": [
+    "snode://23ddfb54a488f906cdb9cbd257eac5663a4c74ba25619bb902651602a4491be4ce437907fcc567b31be6746a014931f4670ac116c0010e5beb28b0dce2c6eaad@172.32.128.11:39007"
+  ],
+  "RPCAddr": "0.0.0.0:55027",
+  "HTTPAddr": "0.0.0.0:65027",
+  "HTTPCors": [
+    "*"
+  ],
+  "HTTPWhiteHost": [
+    "*"
+  ],
+  "IsDebug": true,
+  "PrintLog": true,
+  "SeeleConfig": {
+    "NetworkID": 1,
+    "TxConf": {
+      "Capacity": 1024
+    }
+  }
+}
