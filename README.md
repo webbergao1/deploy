@@ -2,19 +2,25 @@
 Deploys some of nodes with the docker-compose.
 
 We used two docker images.
-go-seele:
+* go-seele:
     The seele node image is used to start the node and client.
-    Command: 
+    Command:
+        ```makefile
         node start -c <configfile>
+        ```
     With docker: 
+        ```makefile
         docker run -v <local config path>:/go-seele/config -it go-seele node start -c /go-seele/config/<configfile>
+        ```
 
-Monitor-api:
+* Monitor-api:
     The monitor-api image is used to start an service to linked on an node.
     The service gets some informations form the node, and send them to another server which used to collect and analysis the informations.
     Each node corresponds to an monitor-api.
     Start with docker:
+        ```makefile
         docker run -v <configfile>:/monitor-api/app.conf monitor-api
+        ```
 
 # configuration folder
 [node_config] 
