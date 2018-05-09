@@ -1,7 +1,7 @@
 # deployment
 Deploys some of nodes with the docker-compose.
 
-We used two docker images.<br> 
+We used two docker images.
 ## go-seele:
     The seele node image is used to start the node and client.\<br> 
     * Command:
@@ -14,22 +14,23 @@ We used two docker images.<br>
 ## Monitor-api:
     The monitor-api image is used to start an service to linked on an node.
     The service gets some informations form the node, and send them to another server which used to collect and analysis the informations.
-    Each node corresponds to an monitor-api.<br> 
+    Each node corresponds to an monitor-api.
     Start with docker:
         docker run -v <configfile>:/monitor-api/app.conf monitor-api
 
 # configuration folder
-[node_config] 
-    Puts node configuration files
-
-[monitor_api_config]
-    Puts monitor-api configuration files
+>deployment
+>>node_config
+>>*Puts node configuration files
+>>
+>>monitor_api_config
+>>*Puts monitor-api configuration files
 
 # docker-compose.yml
 Start 2 nodes and 2 monitor-api services with docker images.
 
 # docker-compose-monitor.yml
-Start 2 nodes and 2 monitor-api services with docker images.
+Start 2 nodes and 2 monitor-api services with docker images.<br>
 Same with docker-compose.yml.
 
 # docker-compose-node.yml
